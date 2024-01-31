@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+  </head>
+  <body>
+      <h1>Registration</h1>
+      <form action="{{ url_for('register') }}" method="POST">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required/>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required/>
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" onkeydown="return /[a-zA-Z]/i.test(event.key)" required/>
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" onkeydown="return /[a-zA-Z]/i.test(event.key)" required/>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required/>
+          <input type="submit" value="Register"/>
+      </form>
+      <p style="color: red;">{{ error }}</p>
+      <p>Already have an account? Log in <a href="{{ url_for('login') }}">here</a>.</p>
+  </body>
+</html>
