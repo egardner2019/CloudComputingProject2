@@ -31,7 +31,7 @@ def execute_query(query, args=()):
 @app.route('/')
 def profile():
   # If the user is already saved in the session, show their profile details
-  if session['username'] and session['firstname'] and session['lastname'] and session['email']:
+  if session and session['username'] and session['firstname'] and session['lastname'] and session['email']:
     return render_template('index.html')
 
   # If the user is not in the session, make them log in
