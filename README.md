@@ -13,9 +13,3 @@ I completed this assignment for my Cloud Computing Course at the University of C
    c. Upon submission redirect to next page. Display information accepted in step 3b.
 
    d. Should ask for username and password to retrieve user information.
-
-## Extra Credit
-1. Upload the file Limerick.txt with above designed form.
-2. Store it.
-3. Display the count of words in the file on page designed in step #3c and provide link to download it.
-4. Display all the information from extra credit step#3 upon re-login.
